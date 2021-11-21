@@ -1,0 +1,35 @@
+/******************************************************************************
+
+Write a C program to accept the height of a person in centimeter and categorize the person according to their height.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+  int height;
+  printf("Type your height in centimeters :");
+  scanf("%d", &height);
+
+  if (height > 150 && height < 180)
+  {
+    printf("You got B");
+  }
+
+  else if (height == 180)
+  {
+    printf("You got A+");
+  }
+
+  else if (height < 150)
+  {
+    printf("You are not even 150 dude :(");
+  }
+
+  else if (height > 180)
+  {
+    printf("Why are you so tall dude?");
+  }
+  return 0;
+}
+
